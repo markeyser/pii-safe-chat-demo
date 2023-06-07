@@ -2,7 +2,6 @@
 
 name: Sync to Hugging Face hub
 
-
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but
@@ -36,10 +35,16 @@ jobs:
       - name: Add remote 
         env:
           HF: ${{ secrets.HF }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PII_SAFE_CHAT_USERNAME: ${{ secrets.PII_SAFE_CHAT_USERNAME }}
+          PII_SAFE_CHAT_PASSWORD: ${{ secrets.PII_SAFE_CHAT_PASSWORD }}
         run: git remote add space https://magkey:$HF@huggingface.co/spaces/LLMsLab/pii-safe-chat
       
       # Runs a set of commands using the runners shell
       - name: Push to hub
         env:
           HF: ${{ secrets.HF }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PII_SAFE_CHAT_USERNAME: ${{ secrets.PII_SAFE_CHAT_USERNAME }}
+          PII_SAFE_CHAT_PASSWORD: ${{ secrets.PII_SAFE_CHAT_PASSWORD }}
         run: git push --force https://magkey:$HF@huggingface.co/spaces/LLMsLab/pii-safe-chat main
