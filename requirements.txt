@@ -1,0 +1,8 @@
+python-dotenv
+openai
+presidio_analyzer
+presidio_anonymizer
+gradio
+tensorflow
+spacy
+en_core_web_lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.4.0/en_core_web_lg-3.4.0-py3-none-any.whl
