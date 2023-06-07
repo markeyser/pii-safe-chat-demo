@@ -49,6 +49,13 @@ jobs:
           PII_SAFE_CHAT_PASSWORD: ${{ secrets.PII_SAFE_CHAT_PASSWORD }}
         run: git push --force https://magkey:$HF@huggingface.co/spaces/LLMsLab/pii-safe-chat main
 
+
+      - name: Test Env
+        run: |
+          echo 'The GitHub Action Secret will be masked:  '
+          echo ${{ secrets.OPENAI_API_KEY }}
+          echo 'Testing secret if its masked: '
+          printenv
 #       # Install Python dependencies and run Python script
 #       - name: Run Python script
 #         env:
