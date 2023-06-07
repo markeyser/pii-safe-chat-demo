@@ -10,7 +10,7 @@ import gradio as gr  # 3.32
 # NOTE: while using Jupyter Notebooks with VS Code, even when the .env
 # is located in the root directory of the project, you must use ../.env
 # instead of .env
-load_dotenv(".env")
+load_dotenv()
 
 # Check if the .env file exists in the Google Drive path
 if os.path.exists("/content/drive/MyDrive/Projects/.env"):
@@ -300,7 +300,7 @@ with gr.Blocks(theme="darkhuggingface") as demo:
 # Launch the Gradio interface
 demo.launch(
     #share=True,
-    #auth=(username, password),
-    #auth_message="Check your Login details sent to your email",
+    auth=(username, password),
+    auth_message="Check your Login details sent to your email",
 )
 # demo.launch(share=True)
