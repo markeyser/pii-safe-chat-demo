@@ -180,7 +180,7 @@ def predict(input):
 
 # Start creating a Gradio Blocks interface with the 'darkhuggingface'
 # theme
-with gr.Blocks(theme="darkhuggingface") as demo:
+with gr.Blocks() as demo:
     # Add a markdown element to the interface with introductory
     # information
     gr.Markdown(
@@ -300,7 +300,7 @@ with gr.Blocks(theme="darkhuggingface") as demo:
 # Launch the Gradio interface
 demo.launch(
     #share=True,
-    #auth=(username, password),
-    #auth_message="Check your Login details sent to your email",
+    auth=(username, password),
+    auth_message="Check your Login details sent to your email",
 )
 # demo.launch(share=True)
