@@ -1,19 +1,17 @@
 ---
-title: Pii Safe Chat
+title: Chat Replica
 emoji: ⚡
-colorFrom: red
-colorTo: yellow
+colorFrom: green
+colorTo: blue
 sdk: gradio
-sdk_version: 3.32.0
+sdk_version: 3.33.1
 app_file: app.py
 pinned: false
 license: cc
 ---
 
-[![Sync to Hugging Face hub](https://github.com/markeyser/pii-safe-chat-demo/actions/workflows/main.yml/badge.svg)](https://github.com/markeyser/pii-safe-chat-demo/actions/workflows/main.yml)
-
-# pii-safe-chat-demo
-
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+[![Sync to Hugging Face hub](https://github.com/markeyser/pii-safe-chat-demo/actions/workflows/main.yml/badge.svg)](https://github.com/markeyser/pii-safe-chat-demo/actions/workflows/main.yml)
 
 
