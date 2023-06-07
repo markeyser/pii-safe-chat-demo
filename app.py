@@ -300,7 +300,7 @@ with gr.Blocks(theme="darkhuggingface") as demo:
 # Launch the Gradio interface
 demo.launch(
     #share=True,
-    auth=(username, password),
-    auth_message="Check your Login details sent to your email",
+    #auth=(username, password),
+    #auth_message="Check your Login details sent to your email",
 )
 # demo.launch(share=True)
