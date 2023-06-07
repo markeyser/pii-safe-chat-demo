@@ -10,7 +10,7 @@ pinned: false
 license: cc
 ---
 
-[![Sync to Hugging Face hub](https://github.com/magkey/hugging-face/actions/workflows/main.yml/badge.svg)](https://github.com/magkey/hugging-face/actions/workflows/main.yml)
+[![Sync to Hugging Face hub](https://github.com/markeyser/hugging-face/actions/workflows/main.yml/badge.svg)](https://github.com/markeyser/hugging-face/actions/workflows/main.yml)
 
 # pii-safe-chat-demo
 
